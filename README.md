@@ -40,6 +40,19 @@ require "kernel_mustard"
 
 That's it! If you've got a single entrypoint or initialization file, be sure to require this there so that it applies uniformly to your whole codebase.
 
+The gem exposes two methods to `Kernel`: `must!` and `must_or`.
+
+```ruby
+# Raises if the value is `nil`
+maybe_nil.must!.size
+
+# You can also provide an error message
+maybe_nil.must!("Definitely here").size
+
+# Or you can define a default
+maybe_nile.must_or { "default_value" }.size
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

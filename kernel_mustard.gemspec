@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["reese@reesew.com"]
 
   spec.summary = "Monkeypatches for asserting values as non-nil."
-  spec.homepage = "https://github.com/reese/kernel-mustard"
+  spec.homepage = "https://github.com/reese/kernel_mustard"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "#{spec.homepage}/tree/main/CHANGELOG.md"
 
   gemspec = File.basename(__FILE__)
-  spec.files = ["lib/kernel/mustard.rb", "sorbet/rbi/kernel.rbi", "sorbet/rbi/nil_class.rbi"]
+  spec.files = ["lib/kernel/mustard.rb", "rbi/kernel_mustard/kernel.rbi", "rbi/kernel_mustard/nil_class.rbi"]
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]

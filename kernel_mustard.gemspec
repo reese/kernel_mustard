@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/kernel/mustard/version"
+require_relative "lib/kernel_mustard/version"
 
 Gem::Specification.new do |spec|
   spec.name = "kernel_mustard"
@@ -18,8 +18,8 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "#{spec.homepage}/tree/main/CHANGELOG.md"
 
   gemspec = File.basename(__FILE__)
-  spec.files = ["lib/kernel/mustard.rb", "rbi/kernel_mustard/kernel.rbi", "rbi/kernel_mustard/nil_class.rbi"]
+  spec.files = ["lib/kernel_mustard/kernel_mustard.rb", "rbi/kernel_mustard/kernel.rbi", "rbi/kernel_mustard/nil_class.rbi"]
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ["lib/kernel_mustard"]
 end

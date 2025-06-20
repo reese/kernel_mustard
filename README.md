@@ -1,8 +1,8 @@
 <div align="center">
-  <img alt="Prism Ruby parser" height="256px" src="https://github.com/reese/kernel-mustard/blob/main/assets/colonel-mustard.jpeg?raw=true">
+  <img alt="Prism Ruby parser" height="256px" src="https://github.com/reese/kernel_mustard/blob/main/assets/colonel-mustard.jpeg?raw=true">
 </div>
 
-# `kernel-mustard`
+# `kernel_mustard`
 
 This gem adds some methods to `Kernel` and `nil` to support assertions that values are non-nil (with the ability to define defaults).
 
@@ -21,21 +21,21 @@ However, its usage isn't limited to Sorbet, and it intentionally doesn't have a 
 ## Installation
 
 ```bash
-bundle add kernel-mustard
+bundle add kernel_mustard
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
 ```bash
-gem install kernel-mustard
+gem install kernel_mustard
 ```
 
-For Sorbet users, there are `.rbi` files included with the gem. Assuming you're using Tapioca, you can import those with `bin/tapioca gem kernel-mustard`.
+For Sorbet users, there are `.rbi` files included with the gem. Assuming you're using Tapioca, you can import those with `bin/tapioca gem kernel_mustard`.
 
 ## Usage
 
 ```ruby
-require "kernel-mustard"
+require "kernel_mustard"
 ```
 
 That's it! If you've got a single entrypoint or initialization file, be sure to require this there so that it applies uniformly to your whole codebase.
@@ -48,7 +48,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/reese/kernel-mustard.
+Bug reports and pull requests are welcome on GitHub at https://github.com/reese/kernel_mustard.
 
 ## License
 

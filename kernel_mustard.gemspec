@@ -3,7 +3,7 @@
 require_relative "lib/kernel/mustard/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "kernel-mustard"
+  spec.name = "kernel_mustard"
   spec.version = KernelMustard::VERSION
   spec.authors = ["Reese Williams"]
   spec.email = ["reese@reesew.com"]

@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "#{spec.homepage}/tree/main/CHANGELOG.md"
 
   gemspec = File.basename(__FILE__)
-  spec.files = ["lib/kernel/mustard.rb"]
+  spec.files = ["lib/kernel/mustard.rb", "sorbet/rbi/kernel.rbi", "sorbet/rbi/nil_class.rbi"]
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]

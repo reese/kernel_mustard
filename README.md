@@ -1,4 +1,6 @@
-![A portrait of Colonel Mustard from the board game Clue.](./assets/colonel-mustard.jpeg)
+<div align="center">
+  <img alt="Prism Ruby parser" height="256px" src="https://github.com/reese/kernel-mustard/blob/main/assets/colonel-mustard.jpeg?raw=true">
+</div>
 
 # `kernel-mustard`
 

@@ -30,6 +30,8 @@ If bundler is not being used to manage dependencies, install the gem by executin
 gem install kernel-mustard
 ```
 
+For Sorbet users, there are `.rbi` files included with the gem. Assuming you're using Tapioca, you can import those with `bin/tapioca gem kernel-mustard`.
+
 ## Usage
 
 ```ruby

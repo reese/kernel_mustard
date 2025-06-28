@@ -25,4 +25,16 @@ class Kernel::TestMustard < Minitest::Test
   def test_it_falls_back_to_default_for_nil
     assert_equal("test", nil.must_or { "test" })
   end
+
+  def test_it_does_not_fall_back_for_non_nil
+    assert_equal("foo", "foo".must_or { "bar" })
+  end
+
+  def test_it_does_not_raise_for_non_nil
+    begin
+      0.must!
+    rescue
+      flunk("Kernel#must! raised on a non-nil value.")
+    end
+  end
 end
